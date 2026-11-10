@@ -1,0 +1,120 @@
+{
+  "scope": "Local deterministic simulation and offline handler test with in-memory S3",
+  "capacity_model": {
+    "arrivals_per_tick": {
+      "steady": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "burst": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "initial_workers": 1,
+    "maximum_workers": 6,
+    "target_pending_jobs_per_worker": 2,
+    "idle_ticks_to_scale_down": 3,
+    "jobs_per_worker_per_tick": 1,
+    "limitations": "Workers start immediately. Tick durations and S3 behaviour are modelled."
+  },
+  "capacity": {
+    "steady_fixed": {
+      "arrivals": 20,
+      "completed": 20,
+      "peak_workers": 1,
+      "final_workers": 1,
+      "peak_backlog_after_service": 0,
+      "p95_completion_ticks": 1,
+      "worker_service_slots": 20,
+      "jobs_by_worker": [
+        20
+      ]
+    },
+    "steady_elastic": {
+      "arrivals": 20,
+      "completed": 20,
+      "peak_workers": 1,
+      "final_workers": 1,
+      "peak_backlog_after_service": 0,
+      "p95_completion_ticks": 1,
+      "worker_service_slots": 20,
+      "jobs_by_worker": [
+        20
+      ]
+    },
+    "burst_fixed": {
+      "arrivals": 60,
+      "completed": 60,
+      "peak_workers": 1,
+      "final_workers": 1,
+      "peak_backlog_after_service": 40,
+      "p95_completion_ticks": 41,
+      "worker_service_slots": 60,
+      "jobs_by_worker": [
+        60
+      ]
+    },
+    "burst_elastic": {
+      "arrivals": 60,
+      "completed": 60,
+      "peak_workers": 6,
+      "final_workers": 1,
+      "peak_backlog_after_service": 5,
+      "p95_completion_ticks": 2,
+      "worker_service_slots": 98,
+      "jobs_by_worker": [
+        15,
+        10,
+        10,
+        9,
+        9,
+        7
+      ]
+    }
+  },
+  "recovery": {
+    "objects_after_interruption": 1,
+    "objects_after_retry_and_replay": 2,
+    "missing_objects_after_retry": 0,
+    "retry_marked_duplicate": false,
+    "identical_replay_marked_duplicate": true,
+    "invalid_record_rejected_without_new_objects": true
+  }
+}

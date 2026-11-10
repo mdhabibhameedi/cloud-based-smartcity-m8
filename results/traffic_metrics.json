@@ -1,0 +1,16 @@
+{
+  "dataset": "Synthetic Newvale traffic data",
+  "train_records": 4528,
+  "test_records": 1136,
+  "split_timestamp": "2026-09-18 04:00:00+00:00",
+  "baseline": {
+    "MAE": 13.8248,
+    "RMSE": 18.0836,
+    "R2": 0.8397
+  },
+  "random_forest": {
+    "MAE": 10.7985,
+    "RMSE": 14.0251,
+    "R2": 0.9036
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source": "SYNTHETIC - not real city measurements",
+  "seed": 808,
+  "days": 60,
+  "zones": 4,
+  "rows_per_dataset": 5760,
+  "start_utc": "2026-08-01T00:00:00Z",
+  "end_utc": "2026-09-29T23:00:00Z",
+  "checks": {
+    "traffic_row_count": true,
+    "traffic_unique_ids": true,
+    "traffic_no_missing_values": true,
+    "traffic_synthetic_labels": true,
+    "traffic_hourly_continuity": true,
+    "energy_row_count": true,
+    "energy_unique_ids": true,
+    "energy_no_missing_values": true,
+    "energy_synthetic_labels": true,
+    "energy_hourly_continuity": true,
+    "matching_zone_timestamp_pairs": true,
+    "valid_traffic_values": true,
+    "valid_energy_values": true,
+    "all_checks_passed": true
+  },
+  "sha256": {
+    "data/raw/traffic_synthetic.csv": "febf12c26841cb3788b64c00be6a83367cf4e514b2859299d0819f388a35d2df",
+    "data/raw/energy_synthetic.csv": "27f87c438b8aef4374e3aa15e078de3ae29823f2d4bd4627cdcd7954de292a91"
+  }
+}

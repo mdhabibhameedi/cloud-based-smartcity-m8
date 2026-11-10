@@ -1,0 +1,177 @@
+{
+  "region": "eu-north-1",
+  "pricing_date": "2026-11-10",
+  "currency": "USD",
+  "rates": {
+    "iot_connection": {
+      "service": "AWSIoT",
+      "sku": "649HFWPSDFV4X2XG",
+      "usage_type": "EUN1-ConnectionMinutes",
+      "unit": "Minutes",
+      "usd_per_unit": "0.0000000960",
+      "version": "20261003053120",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSIoT/20261003053120/eu-north-1/index.json"
+    },
+    "iot_message": {
+      "service": "AWSIoT",
+      "sku": "UEMW6DQZPD66UZFF",
+      "usage_type": "EUN1-Messages",
+      "unit": "Messages",
+      "usd_per_unit": "0.0000012000",
+      "version": "20261003053120",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSIoT/20261003053120/eu-north-1/index.json"
+    },
+    "iot_rule": {
+      "service": "AWSIoT",
+      "sku": "ER2XUT3BQHZVXS84",
+      "usage_type": "EUN1-RulesTriggered",
+      "unit": "RulesTriggered",
+      "usd_per_unit": "0.0000001800",
+      "version": "20261003053120",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSIoT/20261003053120/eu-north-1/index.json"
+    },
+    "iot_action": {
+      "service": "AWSIoT",
+      "sku": "P98X9QM3S7NVJ4WP",
+      "usage_type": "EUN1-ActionsExecuted",
+      "unit": "ActionsExecuted",
+      "usd_per_unit": "0.0000001800",
+      "version": "20261003053120",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSIoT/20261003053120/eu-north-1/index.json"
+    },
+    "lambda_request": {
+      "service": "AWSLambda",
+      "sku": "KERWZD8CJ22SEZWT",
+      "usage_type": "EUN1-Request",
+      "unit": "Request",
+      "usd_per_unit": "0.0000002000",
+      "version": "20261030234255",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/20261030234255/eu-north-1/index.json"
+    },
+    "lambda_compute_x86": {
+      "service": "AWSLambda",
+      "sku": "7N49FRQMXS49C2QS",
+      "usage_type": "EUN1-Lambda-GB-Second",
+      "unit": "Lambda-GB-Second",
+      "usd_per_unit": "0.0000166667",
+      "version": "20261030234255",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/20261030234255/eu-north-1/index.json"
+    },
+    "s3_standard_put": {
+      "service": "AmazonS3",
+      "sku": "GRMX7KKGXZWXWYA7",
+      "usage_type": "EUN1-Requests-Tier1",
+      "unit": "Requests",
+      "usd_per_unit": "0.0000050000",
+      "version": "20261109154310",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20261109154310/eu-north-1/index.json"
+    },
+    "s3_standard_storage": {
+      "service": "AmazonS3",
+      "sku": "W3FCBWN4J47P9GU4",
+      "usage_type": "EUN1-TimedStorage-ByteHrs",
+      "unit": "GB-Mo",
+      "usd_per_unit": "0.0230000000",
+      "version": "20261109154310",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20261109154310/eu-north-1/index.json"
+    },
+    "cloudwatch_standard_vended_ingestion": {
+      "service": "AmazonCloudWatch",
+      "sku": "EC4P6AAQW57AKVYX",
+      "usage_type": "EUN1-VendedLog-Bytes",
+      "unit": "GB",
+      "usd_per_unit": "0.5400000000",
+      "version": "20261104213532",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/20261104213532/eu-north-1/index.json"
+    }
+  },
+  "scenarios": [
+    {
+      "sensors": 50,
+      "quantities": {
+        "iot_connection": "2160000",
+        "iot_message": "432000",
+        "iot_rule": "432000",
+        "iot_action": "432000",
+        "lambda_request": "432000",
+        "lambda_compute_x86": "16200.00000",
+        "s3_standard_put": "864000",
+        "s3_standard_storage": "0.864",
+        "cloudwatch_standard_vended_ingestion": "0.432"
+      },
+      "cost_by_usage_usd": {
+        "iot_connection": "0.2073600000",
+        "iot_message": "0.5184000000",
+        "iot_rule": "0.0777600000",
+        "iot_action": "0.0777600000",
+        "lambda_request": "0.0864000000",
+        "lambda_compute_x86": "0.270000540000000",
+        "s3_standard_put": "4.3200000000",
+        "s3_standard_storage": "0.0198720000000",
+        "cloudwatch_standard_vended_ingestion": "0.2332800000000"
+      },
+      "total_usd": "5.81"
+    },
+    {
+      "sensors": 100,
+      "quantities": {
+        "iot_connection": "4320000",
+        "iot_message": "864000",
+        "iot_rule": "864000",
+        "iot_action": "864000",
+        "lambda_request": "864000",
+        "lambda_compute_x86": "32400.00000",
+        "s3_standard_put": "1728000",
+        "s3_standard_storage": "1.728",
+        "cloudwatch_standard_vended_ingestion": "0.864"
+      },
+      "cost_by_usage_usd": {
+        "iot_connection": "0.4147200000",
+        "iot_message": "1.0368000000",
+        "iot_rule": "0.1555200000",
+        "iot_action": "0.1555200000",
+        "lambda_request": "0.1728000000",
+        "lambda_compute_x86": "0.540001080000000",
+        "s3_standard_put": "8.6400000000",
+        "s3_standard_storage": "0.0397440000000",
+        "cloudwatch_standard_vended_ingestion": "0.4665600000000"
+      },
+      "total_usd": "11.62"
+    },
+    {
+      "sensors": 200,
+      "quantities": {
+        "iot_connection": "8640000",
+        "iot_message": "1728000",
+        "iot_rule": "1728000",
+        "iot_action": "1728000",
+        "lambda_request": "1728000",
+        "lambda_compute_x86": "64800.00000",
+        "s3_standard_put": "3456000",
+        "s3_standard_storage": "3.456",
+        "cloudwatch_standard_vended_ingestion": "1.728"
+      },
+      "cost_by_usage_usd": {
+        "iot_connection": "0.8294400000",
+        "iot_message": "2.0736000000",
+        "iot_rule": "0.3110400000",
+        "iot_action": "0.3110400000",
+        "lambda_request": "0.3456000000",
+        "lambda_compute_x86": "1.080002160000000",
+        "s3_standard_put": "17.2800000000",
+        "s3_standard_storage": "0.0794880000000",
+        "cloudwatch_standard_vended_ingestion": "0.9331200000000"
+      },
+      "total_usd": "23.24"
+    }
+  ],
+  "assumptions": [
+    "30 days, continuously connected, one message per device every five minutes.",
+    "One billable MQTT message, IoT rule action and Lambda invocation per event.",
+    "On-demand x86 Lambda, 128 MB, 0.30 seconds billed per invocation.",
+    "Two S3 Standard writes per event. Each object is assumed to be 1 KB.",
+    "Month-end S3 storage is charged as a full-month planning allowance.",
+    "CloudWatch Standard vended logs use 1 KB per invocation.",
+    "Excludes free tier, credits, retries, reads, log retention, egress and taxes."
+  ]
+}

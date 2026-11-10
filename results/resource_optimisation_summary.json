@@ -1,0 +1,28 @@
+{
+  "project": "Newvale Smart City",
+  "stage": "Resource Optimisation",
+  "request_count": 200,
+  "cache": {
+    "uncached_seconds": 0.6699,
+    "cached_seconds": 0.0158,
+    "cache_hits": 196,
+    "cache_misses": 4,
+    "cache_hit_percentage": 98.0
+  },
+  "load_balancing": {
+    "single_worker": [
+      200
+    ],
+    "two_workers": [
+      100,
+      100
+    ],
+    "strategy": "Round-robin request distribution"
+  },
+  "notes": [
+    "Local simulation, not deployed AWS load balancing",
+    "Processing delay includes simulated work",
+    "Worker distribution does not establish throughput gains",
+    "Caching results apply to this controlled workload"
+  ]
+}

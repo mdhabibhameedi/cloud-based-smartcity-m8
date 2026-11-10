@@ -1,0 +1,24 @@
+{
+  "project": "Newvale Smart City",
+  "stage": "Cross-Service Innovation",
+  "method": "Predicted traffic-based adaptive lighting",
+  "data_type": "Synthetic",
+  "matched_records": 1136,
+  "test_period_start": "2026-09-18 04:00:00+00:00",
+  "test_period_end": "2026-09-29 23:00:00+00:00",
+  "fixed_lighting_kwh": 3036.504,
+  "adaptive_lighting_kwh": 1719.37,
+  "estimated_savings_kwh": 1317.134,
+  "estimated_savings_percent": 43.38,
+  "theoretical_fixed_lighting_kwh": 3038.0,
+  "assumptions": {
+    "traffic_below_20": "40% brightness",
+    "traffic_20_to_59": "70% brightness",
+    "traffic_60_and_above": "100% brightness",
+    "lights_off": "0% brightness",
+    "dimming_energy_model": "Linear approximation",
+    "fixed_baseline": "Synthetic energy_kwh observations",
+    "real_world_savings": "Not measured",
+    "safety_validation": "Not performed"
+  }
+}
